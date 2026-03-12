@@ -9,18 +9,18 @@ private class DemoAccountHelperTest {
     static void testGetAccountGreeting_WithValidName() {
         // Test with a valid account name
         String result = DemoAccountHelper.getAccountGreeting('Acme Corporation');
-        System.assertEquals('Hello, Acme Corporation!', result, 'Should return greeting with account name');
+        System.assertEquals('Howdy, Acme Corporation!', result, 'Should return greeting with account name');
     }
     
     @isTest
     static void testGetAccountGreeting_WithBlankName() {
         // Test with blank account name
         String result = DemoAccountHelper.getAccountGreeting('');
-        System.assertEquals('Hello, Guest!', result, 'Should return guest greeting for blank name');
+        System.assertEquals('Hello, Howdy!', result, 'Should return guest greeting for blank name');
         
         // Test with null account name
         result = DemoAccountHelper.getAccountGreeting(null);
-        System.assertEquals('Hello, Guest!', result, 'Should return guest greeting for null name');
+        System.assertEquals('Hello, Howdy!', result, 'Should return guest greeting for null name');
     }
     
     @isTest

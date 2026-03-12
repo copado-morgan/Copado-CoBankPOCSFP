@@ -13,7 +13,7 @@ public with sharing class DemoAccountHelper {
         if (String.isBlank(accountName)) {
             return 'Hello, Guest!';
         }
-        return 'Hello, ' + accountName + '!';
+        return 'Howdy Richa, ' + accountName + '!';
     }
     
     /**
