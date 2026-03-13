@@ -11,9 +11,9 @@ public with sharing class DemoAccountHelper {
      */
     public static String getAccountGreeting(String accountName) {
         if (String.isBlank(accountName)) {
-            return 'Hello, Guest!';
+            return 'Greetings, Guest!';
         }
-        return 'Hello, ' + accountName + '!';
+        return 'Greetings, ' + accountName + '!';
     }
     
     /**
