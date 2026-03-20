@@ -1,0 +1,66 @@
+/**
+ * @description Test class for Calculator with intentionally LOW coverage
+ * This test class only covers a few methods to demonstrate < 75% coverage
+ */
+@IsTest
+private class CalculatorTest {
+    
+    /**
+     * @description Test the add method with positive numbers
+     */
+    @IsTest
+    static void testAddPositiveNumbers() {
+        // Arrange
+        Decimal num1 = 10;
+        Decimal num2 = 5;
+        
+        // Act
+        Test.startTest();
+        Decimal result = Calculator.add(num1, num2);
+        Test.stopTest();
+        
+        // Assert
+        System.assertEquals(15, result, 'Addition should return 15');
+    }
+    
+    /**
+     * @description Test the subtract method
+     */
+    @IsTest
+    static void testSubtract() {
+        // Arrange
+        Decimal num1 = 20;
+        Decimal num2 = 8;
+        
+        // Act
+        Test.startTest();
+        Decimal result = Calculator.subtract(num1, num2);
+        Test.stopTest();
+        
+        // Assert
+        System.assertEquals(12, result, 'Subtraction should return 12');
+    }
+    
+    /**
+     * @description Test the isEven method with an even number
+     */
+    @IsTest
+    static void testIsEvenWithEvenNumber() {
+        // Act
+        Test.startTest();
+        Boolean result = Calculator.isEven(4);
+        Test.stopTest();
+        
+        // Assert
+        System.assertEquals(true, result, '4 should be even');
+    }
+    
+    // NOTE: The following methods are NOT tested, resulting in low coverage:
+    // - multiply()
+    // - divide() and its exception handling
+    // - power() and its various branches
+    // - squareRoot() and its exception handling
+    // - factorial() and its exception handling
+    // - isEven() with odd numbers
+    
+}
