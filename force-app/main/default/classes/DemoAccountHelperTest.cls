@@ -8,7 +8,7 @@ private class DemoAccountHelperTest {
     @isTest
     static void testGetAccountGreeting_WithValidName() {
         // Test with a valid account name
-        String result = DemoAccountHelper.getAccountGreeting('Acme Corporation');
+        String result = DemoAccountHelper.getAccountGreeting('Wiley E Coyote Corporation');
         System.assertEquals('Hello, Acme Corporation!', result, 'Should return greeting with account name');
     }
     
